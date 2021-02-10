@@ -1,0 +1,14 @@
+/* pages/home/home.wxss */
+.home .search_bar {
+  color: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .search_bar .search_bar_icons{
+  font-size: 36rpx;
+}
+.home .search_bar .search_bar_txt{
+  font-size: 28rpx;
+}

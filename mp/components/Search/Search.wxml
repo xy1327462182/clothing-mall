@@ -1,0 +1,16 @@
+<view class="search_wrap" style="background: {{background}}">
+  <view class="left_wrap">
+    <slot name="search_left_fun"></slot>
+  </view>
+  <navigator class="center_wrap" url="/pages/search/search">
+    <van-search 
+      background="{{background}}"
+      placeholder="请输入搜索关键词"
+      shape="round"
+      left-icon="search"
+    />
+  </navigator>
+  <view class="right_wrap">
+    <slot name="search_right_fun"></slot>
+  </view>
+</view>

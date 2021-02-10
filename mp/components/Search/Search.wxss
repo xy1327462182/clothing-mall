@@ -1,0 +1,16 @@
+/* components/Search/Search.wxss */
+.search_wrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left_wrap{
+  width: 100rpx;
+}
+.center_wrap{
+  width: 550rpx;
+}
+.right_wrap{
+  width: 100rpx;
+}

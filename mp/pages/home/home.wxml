@@ -1,0 +1,19 @@
+<view class="home">
+  <Search>
+    <navigator 
+      class="search_left_content search_bar" 
+      slot="search_left_fun"
+    >
+      <van-icon name="bars" class="search_bar_icons" />
+      <text class="search_bar_txt">分类</text>
+    </navigator>
+    
+    <navigator 
+      class="search_right_content search_bar"
+      slot="search_right_fun"
+    >
+      <van-icon name="shopping-cart-o" class="search_bar_icons" />
+      <text class="search_bar_txt">购物车</text>
+    </navigator>
+  </Search>
+</view>

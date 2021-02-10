@@ -1,0 +1,8 @@
+{
+  "navigationBarBackgroundColor": "#ff2262",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "服装mall",
+  "usingComponents": {
+    "Search": "../../components/Search/Search"
+  }
+}
