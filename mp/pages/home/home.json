@@ -3,6 +3,9 @@
   "navigationBarTextStyle": "white",
   "navigationBarTitleText": "服装mall",
   "usingComponents": {
-    "Search": "../../components/Search/Search"
+    "Search": "../../components/Search/Search",
+    "Product": "../../components/Product/Product",
+    "van-rate": "@vant/weapp/rate/index",
+    "van-tag": "@vant/weapp/tag/index"
   }
 }

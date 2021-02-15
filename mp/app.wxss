@@ -2,4 +2,8 @@
 page{
   --button-primary-background-color: #ff2262;
   --button-primary-border-color: #ff2262;
+  --search-padding: 0;
+}
+image{
+  width: 100%;
 }

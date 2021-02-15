@@ -1,0 +1,19 @@
+<navigator class="goods_item">
+  <image mode="widthFix" class="goods_item_img" src="{{data.image}}"></image>
+  <view class="goods_item_info_wrapper">
+
+    <view class="goods_item_title">
+      {{data.title}}
+    </view>
+
+    <view class="goods_item_price_wrapper">
+      <text class="goods_item_price">
+        <text class="rmb_icon">￥</text>{{data.price}}
+      </text>
+      <van-tag plain type="danger">{{data.tag}}</van-tag>
+    </view>
+    <view class="goods_item_sales_wrapper">
+      <view class="goods_item_sales">综合销量：{{data.sales}}</view>
+    </view>
+  </view>
+</navigator>

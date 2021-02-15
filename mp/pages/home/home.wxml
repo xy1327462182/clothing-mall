@@ -1,8 +1,11 @@
 <view class="home">
+  <!-- 搜索部分 -->
   <Search>
     <navigator 
       class="search_left_content search_bar" 
       slot="search_left_fun"
+      open-type="switchTab"
+      url="/pages/category/category"
     >
       <van-icon name="bars" class="search_bar_icons" />
       <text class="search_bar_txt">分类</text>
@@ -11,9 +14,132 @@
     <navigator 
       class="search_right_content search_bar"
       slot="search_right_fun"
+      open-type="switchTab"
+      url="/pages/shopcar/shopcar"
     >
       <van-icon name="shopping-cart-o" class="search_bar_icons" />
       <text class="search_bar_txt">购物车</text>
     </navigator>
   </Search>
+
+  <!-- swiper轮播图部分 -->
+  <swiper 
+    autoplay="true"
+    interval="5000"
+    indicator-dots="true"
+  >
+    <block wx:for="{{swiperList}}" wx:key="id">
+      <swiper-item>
+        <navigator>
+          <image mode="widthFix" src="{{item.src}}" class="swiper_image"></image>
+        </navigator>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 首页导航部分 -->
+  <view class="home_nav_wrap">
+    <text class="nav_title">优选导航</text>
+    <view class="nav_content">
+      <navigator 
+        class="nav_item"
+        wx:for="{{navList}}"
+        wx:key="id"
+      >
+        <image src="{{item.icon}}" class="nav_item_icon" mode="widthFix"></image>
+        <text class="nav_item_txt">{{item.title}}</text>
+      </navigator>
+    </view>
+  </view>
+
+  <!-- 商品推荐部分 -->
+  <view class="recommend_goods_wrap">
+    <view class="recommend_title">优选商品</view>
+    <view class="recommend_goods_content">
+      <view class="recommend_goods_column">
+        <Product wx:for="{{goodsList}}" wx:key="id" data="{{item}}" wx:if="{{index%2 == 0}}"></Product>
+      </view>
+      <view class="recommend_goods_column">
+        <Product wx:for="{{goodsList}}" wx:key="id" data="{{item}}" wx:if="{{index%2 != 0}}"></Product>
+      </view>
+    </view>
+  </view>
+
+  <!-- 商家推荐部分 -->
+  <view class="recommend_shops_wrap">
+    <view class="recommend_title">附近商家</view>
+    <view class="recommend_shops_content">
+      <navigator class="recommend_shop_item">
+        
+        <view class="recommend_shop_item_left_wrapper">
+          <image mode="widthFix" src="/icons/test_shops/6449701c361168bd2.jpg" class="shop_item_image"></image>
+        </view>
+
+        <view class="recommend_shop_item_right_wrapper">
+          <text class="shop_title">华莱士童装（遂平金泰店）</text>
+
+          <view class="rate_wrapper">
+            <text class="rate_txt">评分：</text>
+            <van-rate value="{{3.5}}" count="{{ 5 }}" color="#ff2262" allow-half size="{{14}}" />
+            <text class="rate_num">3.5</text>
+          </view>
+
+          <view class="shop_sales_wrapper">
+            <text class="sales_num">销量：1298</text>
+            <view class="shipping_wrapper">
+              <van-tag plain type="danger">可自提</van-tag>
+              <van-tag type="danger">可配送</van-tag>
+            </view>
+          </view>
+
+          <view class="shop_tags_wrapper">
+            <text class="discount_tag_txt">优惠：</text>
+            <van-tag plain type="danger">满10-5</van-tag>
+            <van-tag plain type="danger">满20-10</van-tag>
+            <van-tag plain type="danger">满50-20</van-tag>
+            <van-tag plain type="danger">满1000-200</van-tag>
+            <van-tag plain type="danger">包邮</van-tag>
+          </view>
+
+        </view>
+
+      </navigator>
+
+      <navigator class="recommend_shop_item">
+        
+        <view class="recommend_shop_item_left_wrapper">
+          <image mode="widthFix" src="/icons/test_shops/6449701c361168bd2.jpg" class="shop_item_image"></image>
+        </view>
+
+        <view class="recommend_shop_item_right_wrapper">
+          <text class="shop_title">华莱士童装（遂平金泰店）</text>
+
+          <view class="rate_wrapper">
+            <text class="rate_txt">评分：</text>
+            <van-rate value="{{3.5}}" count="{{ 5 }}" color="#ff2262" allow-half size="{{14}}" />
+            <text class="rate_num">3.5</text>
+          </view>
+
+          <view class="shop_sales_wrapper">
+            <text class="sales_num">销量：1298</text>
+            <view class="shipping_wrapper">
+              <van-tag plain type="danger">可自提</van-tag>
+              <van-tag type="danger">可配送</van-tag>
+            </view>
+          </view>
+
+          <view class="shop_tags_wrapper">
+            <text class="discount_tag_txt">优惠：</text>
+            <van-tag plain type="danger">满10-5</van-tag>
+            <van-tag plain type="danger">满20-10</van-tag>
+            <van-tag plain type="danger">满50-20</van-tag>
+            <van-tag plain type="danger">满1000-200</van-tag>
+            <van-tag plain type="danger">包邮</van-tag>
+          </view>
+
+        </view>
+
+      </navigator>
+    </view>
+  </view>
 </view>

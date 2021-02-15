@@ -1,0 +1,49 @@
+/* components/Product/Product.wxss */
+.goods_item{
+  width: 345rpx;
+  margin-bottom: 20rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column wrap;
+  box-shadow: 0 4rpx 6rpx #ebedf0;
+}
+.goods_item .goods_item_info_wrapper{
+  background-color: #fff;
+  padding: 20rpx;
+}
+.goods_item .goods_item_info_wrapper .goods_item_title{
+  font-size: 28rpx;
+  color: #333;
+  display: -webkit-box;    
+  -webkit-box-orient: vertical;    
+  -webkit-line-clamp: 2;    
+  overflow: hidden;
+  line-height: 45rpx;
+}
+.goods_item .goods_item_info_wrapper .goods_item_price_wrapper{
+  color: #ff4142;
+  display: flex;
+  align-items: center;
+  margin-top: 4rpx;
+  margin-bottom: 4rpx;
+}
+
+.goods_item_price{
+  font-size: 38rpx;
+  font-weight: 700;
+  margin-right: 16rpx;
+}
+.goods_item_price .rmb_icon{
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.goods_item .goods_item_price_wrapper .van-tag{
+  margin-bottom: 10rpx;
+  font-size: 20rpx;
+  font-weight: 600;
+}
+.goods_item_sales_wrapper .goods_item_sales{
+  color: #888;
+  font-size: 24rpx;
+}
