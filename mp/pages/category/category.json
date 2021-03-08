@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "分类",
+  "usingComponents": {
+    "Search": "../../components/Search/Search"
+  }
 }

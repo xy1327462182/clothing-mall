@@ -1,2 +1,157 @@
-<!--pages/shopcar/shopcar.wxml-->
-<text>pages/shopcar/shopcar.wxml</text>
+<view class="shopcar" wx:if="{{false}}">
+
+  <!-- 顶部收货地址部分 -->
+  <view class="top_fixed_wrapper">
+    <view class="address_wrapper">
+      <van-icon name="location-o" class="address_icon" />
+      <!-- <text class="address_text">河南省驻马店市驿城区开元大道南50米的风格个人奋斗</text> -->
+      <text class="address_text">暂无地址</text>
+    </view>
+
+    <!-- <van-button color="#ff2262" size="mini">编辑地址</van-button> -->
+    <!-- <van-button color="#ff2262" size="mini">添加地址</van-button> -->
+
+    <van-button round icon="edit" type="info" size="mini">编辑</van-button>
+    <!-- <van-button round icon="success" type="primary" size="mini">完成</van-button> -->
+  </view>
+
+  <!-- 购物车头部 编辑按钮 -->
+  <!-- <view class="shopcar_header">
+    <van-button round icon="edit" type="info" size="mini">编辑</van-button>
+    <van-button round icon="success" type="primary" size="mini">完成</van-button>
+  </view> -->
+
+  <!-- 购物车主体部分 -->
+  <view 
+    class="shopcar_content"
+  >
+
+    <view class="shopcar_item">
+
+      <navigator class="shop_name_wrapper">
+        <van-icon name="shop-o" size="40rpx" class="shop_name_icon" />
+        <text class="shop_name_txt">尚可喜食品旗舰店</text>
+      </navigator>
+
+      <view class="shopcar_goods_list">
+
+        <view class="shopcar_goods_item">
+          <view class="goods_item_checked_wrapper">
+            <van-checkbox value="{{ checked }}" class="goods_item_checked"></van-checkbox>
+          </view>
+
+          <image class="goods_item_image" src="https://img10.360buyimg.com/n1/jfs/t1/164308/4/4955/155068/6017f068Ea0f5bb6e/ab61f4ddb953f716.jpg" mode="widthFix"></image>
+
+          <view class="goods_item_info">
+
+            <!-- 商品标题 -->
+            <view class="goods_item_title">
+              表示法大大杀伐果断早上给阿斯顿法国矮冬瓜尴尬施工方爱国方式昂粉色绕过去爱人发个个人
+            </view>
+
+            <!-- 配送方式 -->
+            <view class="goods_item_shipping_wrapper">
+              <text class="shipping_txt">配送方式：</text>
+              <van-tag type="success">
+                自提<van-icon name="arrow-down" />
+              </van-tag>
+              <van-action-sheet
+                show="{{show}}"
+                actions="{{ actions }}"
+                bind:close="onClose"
+                bind:select="onSelect"
+                z-index="9999"
+              />
+            </view>
+
+            <!-- 商品单价计算 -->
+            <view class="singlePrice_wrapper">
+              <view class="price_wrap">
+                <text class="rmb_icon">￥</text>138.00
+              </view>
+              <view class="num_wrap">
+                <van-stepper 
+                  value="{{ 1 }}" 
+                  integer="true"
+                  bind:change="onChange" 
+                  button-size="46rpx"
+                  input-width="80rpx"
+                />
+              </view>
+            </view>
+
+            <!-- 优惠详情 -->
+            <view class="discount_wrapper">
+              <view class="discount_card_wrap">
+                <text class="discount_txt">可用优惠：</text>
+                <van-tag plain type="danger">满90-10</van-tag>
+              </view>
+              <view class="discount_price_wrap">
+                <text class="discount_txt">最终价格：</text>
+                <text class="discount_final_price_txt">￥128.00</text>
+              </view>
+            </view>
+            
+          </view>
+        </view>
+
+        <view class="shopcar_goods_item">
+          <van-checkbox value="{{ checked }}" class="goods_item_checked"></van-checkbox>
+
+          <image class="goods_item_image" src="https://img10.360buyimg.com/n1/jfs/t1/164308/4/4955/155068/6017f068Ea0f5bb6e/ab61f4ddb953f716.jpg" mode="widthFix"></image>
+
+          <view class="goods_item_info">
+
+          </view>
+        </view>
+
+      </view>
+    </view>
+
+    <view class="shopcar_item">
+
+<navigator class="shop_name_wrapper">
+  <van-icon name="shop-o" size="40rpx" class="shop_name_icon" />
+  <text class="shop_name_txt">尚可喜食品旗舰店</text>
+</navigator>
+
+  <view class="shopcar_goods_list">
+
+  <view class="shopcar_goods_item">
+    <van-checkbox value="{{ checked }}" class="goods_item_checked"></van-checkbox>
+
+    <image class="goods_item_image" src="https://img10.360buyimg.com/n1/jfs/t1/164308/4/4955/155068/6017f068Ea0f5bb6e/ab61f4ddb953f716.jpg" mode="widthFix"></image>
+
+    <view class="goods_item_info">
+
+    </view>
+  </view>
+
+  </view>
+    </view>
+
+  </view>
+
+  <van-submit-bar
+    safe-area-inset-bottom
+    price="{{ 3050 }}"
+    button-text="去结算"
+    button-type="default"
+    bind:submit="onClickButton"
+  >
+    <van-checkbox value="{{ checked }}">全选</van-checkbox>
+  </van-submit-bar>
+</view>
+
+<view class="none_shopcar">
+  <view class="none_content">
+    <image src="/icons/empty_status/empty_shopcar.png" class="none_shopcar_img"></image>
+    <view class="none_shopcar_txt">购物车中暂无商品</view>
+  </view>
+
+  <van-divider 
+    contentPosition="center"
+    customStyle="border-color: #ccc;"
+  >猜你喜欢</van-divider>
+
+</view>

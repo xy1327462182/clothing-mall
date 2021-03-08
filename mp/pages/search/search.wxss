@@ -1,1 +1,122 @@
-/* pages/search/search.wxss */
+.search {
+}
+
+/* 顶部搜索框 */
+.top_search_wrap {
+  width: 100%;
+  height: 88rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding-bottom: 14rpx;
+}
+.search_input {
+  width: 450rpx;
+  height: 68rpx;
+  background-color: #fff;
+  border-radius: 34rpx;
+  border: 2rpx solid #f81818;
+  padding-left: 25rpx;
+  font-size: 30rpx;
+  color: #555;
+  margin-right: 40rpx;
+}
+
+/* 搜索历史 */
+.history_wrapper {
+  padding: 38rpx 28rpx 0;
+}
+.history_title_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #a1a1a1;
+  font-size: 28rpx;
+}
+.history_title_wrap .history_title_txt {
+  color: #222222;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.history_keywords_list {
+  padding: 36rpx 28rpx 70rpx;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.keywords_item {
+  background-color: #f0f0f0;
+  font-size: 28rpx;
+  color: #5a5a5a;
+  padding: 11rpx;
+  border-radius: 10rpx;
+  margin-right: 16rpx;
+  margin-bottom: 16rpx;
+}
+
+/* 推荐关键词列表 */
+.re_keywords_list {
+  padding-left: 20rpx;
+}
+.re_keywords_item {
+  height: 84rpx;
+  padding-left: 12rpx;
+  padding-right: 20rpx;
+  border-bottom: 1rpx solid #f4f4f4;
+  font-size: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.re_keywords_text_wrap {
+  color: #666;
+  font-size: 30rpx;
+}
+.active_text {
+  color: #ff2262;
+}
+
+/* 搜索结果 */
+
+/* 总tab栏 */
+.total_tabs_wrapper {
+  height: 78rpx;
+  background-color: #f4f4f4;
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.total_tab_item {
+  height: 100%;
+  font-size: 32rpx;
+  color: #555;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.total_tabs_wrapper .total_tab_active {
+  border-bottom: 4rpx solid #ff2262;
+  font-size: 34rpx;
+  color: #ff2262;
+}
+
+.result_list_wrap {
+  width: 100%;
+  height: 300rpx;
+  background-color: green;
+  overflow: hidden;
+}
+.result_list {
+  width: 100%;
+  height: 300px;
+  background-color: pink;
+}
+.result_list view {
+  height: 100rpx;
+}

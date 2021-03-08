@@ -1,2 +1,106 @@
-<!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view class="search">
+  <!-- 顶部搜索框 -->
+  <view class="top_search_wrap">
+    <input type="text" class="search_input" placeholder="请输入搜索关键词"></input>
+    <van-button color="#ff2262" size="small">搜索</van-button>
+  </view>
+
+  <!-- 搜索历史记录 -->
+  <view class="history_wrapper" wx:if="{{false}}">
+
+    <view class="history_title_wrap">
+      <text class="history_title_txt">最近搜索</text>
+      <text class="empty_history">清空记录</text>
+    </view>
+
+    <view class="history_keywords_list">
+      <text class="keywords_item">纯真</text>
+      <text class="keywords_item">海尔洗衣机</text>
+      <text class="keywords_item">无塔供水</text>
+      <text class="keywords_item">热暑期</text>
+      <text class="keywords_item">压力机</text>
+      <text class="keywords_item">热水器3000</text>
+      <text class="keywords_item">联想电脑</text>
+      <text class="keywords_item">小米</text>
+      <text class="keywords_item">红米K30</text>
+      <text class="keywords_item">华为荣耀</text>
+      <text class="keywords_item">华别克K</text>
+      <text class="keywords_item">格力空调</text>
+      <text class="keywords_item">冰箱</text>
+      <text class="keywords_item">男士，帽子</text>
+    </view>
+  </view>
+
+  <!-- 关键词推荐列表 -->
+  <view class="re_keywords_list" wx:if="{{false}}">
+    <view class="re_keywords_item">
+      <view class="re_keywords_text_wrap">
+        <text class="active_text">男童</text>
+        <text class="keywords_other_text">外套</text>
+      </view>
+      <van-icon name="arrow" color="#999" size="34rpx" class="re_keywords_icon" />
+    </view>
+    <view class="re_keywords_item">
+      <view class="re_keywords_text_wrap">
+        <text class="active_text">男童</text>
+        <text class="keywords_other_text">卫衣</text>
+      </view>
+      <van-icon name="arrow" color="#999" size="34rpx" class="re_keywords_icon" />
+    </view>
+    <view class="re_keywords_item">
+      <view class="re_keywords_text_wrap">
+        <text class="active_text">男童</text>
+        <text class="keywords_other_text">鞋子</text>
+      </view>
+      <van-icon name="arrow" color="#999" size="34rpx" class="re_keywords_icon" />
+    </view>
+    <view class="re_keywords_item">
+      <view class="re_keywords_text_wrap">
+        <text class="active_text">男童</text>
+        <text class="keywords_other_text">帽子</text>
+      </view>
+      <van-icon name="arrow" color="#999" size="34rpx" class="re_keywords_icon" />
+    </view>
+    <view class="re_keywords_item">
+      <view class="re_keywords_text_wrap">
+        <text class="active_text">男童</text>
+        <text class="keywords_other_text">衬衣</text>
+      </view>
+      <van-icon name="arrow" color="#999" size="34rpx" class="re_keywords_icon" />
+    </view>
+    <view class="re_keywords_item">
+      <view class="re_keywords_text_wrap">
+        <text class="active_text">男童</text>
+        <text class="keywords_other_text">外套</text>
+      </view>
+      <van-icon name="arrow" color="#999" size="34rpx" class="re_keywords_icon" />
+    </view>
+  </view>
+
+  <!-- 商品列表 -->
+  <view class="result_wrapper">
+
+    <!-- 总tab栏 -->
+    <view class="total_tabs_wrapper">
+      <view class="total_tab_item ">商品</view>
+      <view class="total_tab_item total_tab_active">店铺</view>
+    </view>
+
+    <!-- 筛选tab栏 -->
+
+
+    <view class="result_list_wrap">
+      <scorll-view scroll-y class="result_list">
+      <view id="123">234</view>
+      <view id="12334534">234</view>
+      <view id="123234ws">234</view>
+      <view>234</view>
+      <view>234</view>
+      <view>234</view>
+      <view>234</view>
+   
+    </scorll-view>
+    </view>
+  </view>
+
+</view>

@@ -1,2 +1,142 @@
-<!--pages/category/category.wxml-->
-<text>pages/category/category.wxml</text>
+<view class="category">
+  <!-- 搜索部分 -->
+  <Search background="{{searchBackground}}">
+  </Search>
+
+  <!-- 分类主体部分 -->
+  <view class="category_content">
+    <!-- 左侧分类 -->
+    <scroll-view class="left_cates" scroll-y>
+      <view class="left_cates_item">家族家具</view>
+      <view class="left_cates_item">童装女装</view>
+      <view class="left_cates_item">男装男鞋</view>
+      <view class="left_cates_item">手机数码</view>
+      <view class="left_cates_item cates_item_active">童装女装</view>
+      <view class="left_cates_item">男装男鞋</view>
+      <view class="left_cates_item">家族家具</view>
+      <view class="left_cates_item">服装鞋帽</view>
+      <view class="left_cates_item">电脑器材</view>
+      <view class="left_cates_item">运动器材</view>
+      <view class="left_cates_item">童装女装</view>
+      <view class="left_cates_item">手机数码</view>
+      <view class="left_cates_item">童装女装</view>
+      <view class="left_cates_item">男装男鞋</view>
+      <view class="left_cates_item">家族家具</view>
+      <view class="left_cates_item">服装鞋帽</view>
+      <view class="left_cates_item">电脑器材</view>
+      <view class="left_cates_item">运动器材</view>
+      <view class="left_cates_item">童装女装</view>
+
+    </scroll-view>
+
+    <!-- 右侧内容 -->
+    <scroll-view class="right_content" scroll-y>
+      <view class="c_cate_item">
+        <view class="c_cate_item_title">
+          <text>/</text>
+          <text>男士上衣</text>
+          <text>/</text>
+        </view>
+        <view class="c_cate_item_list">
+          <navigator class="goods_item">
+            <image src="https://img30.360buyimg.com/focus/s140x140_jfs/t17449/23/1286271766/3527/870ce296/5ac4780cN6087feb5.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">棉服</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img12.360buyimg.com/focus/s140x140_jfs/t19312/140/1294064569/4871/1c61d372/5ac47812N52823c3e.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">卫衣</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img12.360buyimg.com/focus/s140x140_jfs/t19312/140/1294064569/4871/1c61d372/5ac47812N52823c3e.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">卫衣</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img20.360buyimg.com/focus/s140x140_jfs/t17890/31/1269777779/2792/917e13d0/5ac47830N63e76af2.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">风衣</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img20.360buyimg.com/focus/s140x140_jfs/t17758/181/1301850814/2848/ad32e7c9/5ac47845N7374a31d.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">休闲裤</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img20.360buyimg.com/focus/s140x140_jfs/t19222/87/1339548468/5738/68f3d8aa/5ac47841Nff658599.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">牛仔裤</text>
+          </navigator>
+          
+        </view>
+      </view>
+
+      <view class="c_cate_item">
+        <view class="c_cate_item_title">
+          <text>/</text>
+          <text>男士上衣</text>
+          <text>/</text>
+        </view>
+        <view class="c_cate_item_list">
+          <navigator class="goods_item">
+            <image src="https://img30.360buyimg.com/focus/s140x140_jfs/t17449/23/1286271766/3527/870ce296/5ac4780cN6087feb5.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">棉服</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img12.360buyimg.com/focus/s140x140_jfs/t19312/140/1294064569/4871/1c61d372/5ac47812N52823c3e.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">卫衣</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img12.360buyimg.com/focus/s140x140_jfs/t19312/140/1294064569/4871/1c61d372/5ac47812N52823c3e.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">卫衣</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img20.360buyimg.com/focus/s140x140_jfs/t17890/31/1269777779/2792/917e13d0/5ac47830N63e76af2.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">风衣</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img20.360buyimg.com/focus/s140x140_jfs/t17758/181/1301850814/2848/ad32e7c9/5ac47845N7374a31d.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">休闲裤</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img20.360buyimg.com/focus/s140x140_jfs/t19222/87/1339548468/5738/68f3d8aa/5ac47841Nff658599.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">牛仔裤</text>
+          </navigator>
+          
+        </view>
+      </view>
+
+
+      <view class="c_cate_item">
+        <view class="c_cate_item_title">
+          <text>/</text>
+          <text>男士上衣</text>
+          <text>/</text>
+        </view>
+        <view class="c_cate_item_list">
+          <navigator class="goods_item">
+            <image src="https://img30.360buyimg.com/focus/s140x140_jfs/t17449/23/1286271766/3527/870ce296/5ac4780cN6087feb5.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">棉服</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img12.360buyimg.com/focus/s140x140_jfs/t19312/140/1294064569/4871/1c61d372/5ac47812N52823c3e.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">卫衣</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img12.360buyimg.com/focus/s140x140_jfs/t19312/140/1294064569/4871/1c61d372/5ac47812N52823c3e.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">卫衣</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img20.360buyimg.com/focus/s140x140_jfs/t17890/31/1269777779/2792/917e13d0/5ac47830N63e76af2.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">风衣</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img20.360buyimg.com/focus/s140x140_jfs/t17758/181/1301850814/2848/ad32e7c9/5ac47845N7374a31d.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">休闲裤</text>
+          </navigator>
+          <navigator class="goods_item">
+            <image src="//img20.360buyimg.com/focus/s140x140_jfs/t19222/87/1339548468/5738/68f3d8aa/5ac47841Nff658599.jpg" mode="widthFix" class="goods_item_img"></image>
+            <text class="goods_item_name">牛仔裤</text>
+          </navigator>
+          
+        </view>
+      </view>
+
+    </scroll-view>
+  </view>
+</view>

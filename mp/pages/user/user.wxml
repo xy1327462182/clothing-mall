@@ -1,3 +1,112 @@
-<view>
-user
+<view class="user">
+
+  <view class="user_wrapper">
+    <view class="top_setting_wrapper">
+      <van-icon name="setting-o" class="top_setting_icon" />
+      <van-icon name="volume-o" info="9"  class="top_setting_icon" />
+    </view>
+
+    <view class="avatar_wrapper">
+      <image src="/icons/default_avatar.jpg" class="user_avatar"></image>
+      <view class="avatar_info_wrap">
+        <text class="nick_name">15963569656</text>
+        <view class="v1_wrap">
+          <text class="v1">v1</text>
+        </view>
+      </view>
+    </view>
+    <!-- <view class="avatar_wrapper">
+      <image src="/icons/none_avatar.jpg" class="user_avatar"></image>
+      <view class="avatar_info_wrap">
+        <text class="nick_name">暂未登录，点击登录</text>
+        <view class="v1_wrap">
+          <text class="v1">v0</text>
+        </view>
+      </view>
+    </view> -->
+  </view>
+
+  <view class="collect_wrapper">
+    <navigator class="collect_item">
+      <text class="collect_item_num">234</text>
+      <text class="collect_item_title">收藏夹</text>
+    </navigator>
+    <navigator class="collect_item">
+      <text class="collect_item_num">678</text>
+      <text class="collect_item_title">关注店铺</text>
+    </navigator>
+    <navigator class="collect_item">
+      <text class="collect_item_num">34</text>
+      <text class="collect_item_title">我的足迹</text>
+    </navigator>
+    <navigator class="collect_item">
+      <text class="collect_item_num">23</text>
+      <text class="collect_item_title">优惠券</text>
+    </navigator>
+  </view>
+
+  <view class="card_util order_wrapper">
+
+    <view class="card_title_wrap">
+      <text class="card_title">我的订单</text>
+      <navigator class="more_wrap">
+        <text>查看全部</text>
+        <van-icon name="arrow" />
+      </navigator>
+    </view>
+
+    <view class="card_content">
+      <navigator class="order_item">
+        <van-icon name="debit-pay" class="order_item_icon" />
+        <text class="order_item_txt">待支付</text>
+      </navigator>
+      <navigator class="order_item">
+        <van-icon name="pending-payment" class="order_item_icon"/>
+        <text class="order_item_txt">待发货</text>
+      </navigator>
+      <navigator class="order_item">
+        <van-icon name="logistics" class="order_item_icon" />
+        <text class="order_item_txt">待收货</text>
+      </navigator>
+      <navigator class="order_item">
+        <van-icon name="after-sale" class="order_item_icon"/>
+        <text class="order_item_txt">退款/售后</text>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="card_util discount_wrapper">
+
+    <view class="card_title_wrap">
+      <text class="card_title">必备工具</text>
+      <navigator class="more_wrap">
+        <text>查看全部</text>
+        <van-icon name="arrow" />
+      </navigator>
+    </view>
+
+    <view class="card_content">
+
+      <navigator class="order_item">
+        <van-icon name="service-o" class="order_item_icon"/>
+        <text class="order_item_txt">客服服务</text>
+      </navigator>
+      
+      <navigator class="order_item">
+        <van-icon name="coupon-o" class="order_item_icon"/>
+        <text class="order_item_txt">我的优惠</text>
+      </navigator>
+
+      <navigator class="order_item">
+        <van-icon name="question-o" class="order_item_icon"/>
+        <text class="order_item_txt">常见问题</text>
+      </navigator>
+
+      <navigator class="order_item">
+        <van-icon name="send-gift-o" class="order_item_icon"/>
+        <text class="order_item_txt">地址管理</text>
+      </navigator>
+
+    </view>
+  </view>
 </view>

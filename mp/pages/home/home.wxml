@@ -7,8 +7,8 @@
       open-type="switchTab"
       url="/pages/category/category"
     >
-      <van-icon name="bars" class="search_bar_icons" />
-      <text class="search_bar_txt">分类</text>
+      <van-icon name="location-o" class="search_bar_icons" />
+      <text class="search_bar_txt">驻马店</text>
     </navigator>
     
     <navigator 

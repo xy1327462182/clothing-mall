@@ -5,7 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    radio: '1',
+    checked: true,
+    switch: false,
+    show: false,
+    actions: [
+      {
+        name: '自提',
+      },
+      {
+        name: '配送',
+      }
+    ],
+  },
+  onTap() {
+    console.log('ontap');
+  },
+  onTouchStart() {
+    console.log('onTouchStart');
+  },
+  shippingClick() {
+    this.setData({
+      show: true
+    })
   },
 
   /**
